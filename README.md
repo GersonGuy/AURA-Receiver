@@ -1,9 +1,22 @@
-﻿# AURA Neural Receiver
+﻿# AURA — Adaptive Wireless Neural Receiver
 
-This repository accompanies the paper **“Online Learning via Learned Latent Bayesian Tracking”** and contains the implementation of the wireless neural receiver experiments.
+Official implementation of **AURA (Adaptive Update through Representation Adaptation)** for wireless neural receivers, accompanying the paper:
 
-The image adaptation experiments are maintained in a separate repository:  
-https://github.com/aura-online-adaptation/AURA-Image-Adaptation
+**Online Learning via Learned Latent Bayesian Tracking**  
+*Advances in Neural Information Processing Systems (NeurIPS 2026)*
+
+**[Paper (arXiv)](https://arxiv.org/abs/2609.31559)**
+
+## Code Repositories
+
+The implementations and experiments associated with the paper are organized into two repositories:
+
+| Repository | Description |
+|------------|-------------|
+| **[AURA-Receiver](https://github.com/GersonGuy/AURA-Receiver)** | Wireless neural receiver experiments, including DeepSIC, learned latent representations, and online Bayesian tracking. |
+| **[AURA-Image-Adaptation](https://github.com/GersonGuy/AURA-Image-Adaptation)** | Image classification and test-time adaptation benchmarks under distribution shifts, including comparisons with TTA baselines. |
+
+Both repositories implement the same underlying AURA framework, adapted to their respective experimental settings.
 
 ---
 
@@ -96,8 +109,8 @@ All commands below are written for **Windows CMD** and should be executed from t
 Clone the repository:
 
 ```cmd
-git clone https://github.com/aura-online-adaptation/AURA-Neural-Receiver.git
-cd AURA-Neural-Receiver
+git clone https://github.com/GersonGuy/AURA-Receiver.git
+cd AURA-Receiver
 ```
 
 ### Option 1: Conda installation
@@ -395,6 +408,25 @@ experiments/data/results/offline_then_multi_test
 Each run folder contains a `results.json` file with the configuration and measured results.
 
 ---
+
+## Citation
+
+If you use AURA or this repository in your research, please cite:
+
+**Online Learning via Learned Latent Bayesian Tracking**  
+*Advances in Neural Information Processing Systems (NeurIPS 2026)*
+```bibtex
+@inproceedings{gerson2026online,
+  title     = {Online Learning via Learned Latent Bayesian Tracking},
+  author    = {Gerson, Guy and Raviv, Tomer and Shlezinger, Nir and Routtenberg, Tirza and Simeone, Osvaldo},
+  booktitle = {Advances in Neural Information Processing Systems},
+  year      = {2026},
+  url       = {https://arxiv.org/abs/2609.31559}
+}
+```
+
+---
+
 
 ## Credits and External Code
 
